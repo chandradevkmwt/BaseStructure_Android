@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.base.structure.ui.activities.OtpActivity"
+    >
+
+    <data class="OtpBinding">
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_submit">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verification Code"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:textColor="#655F5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="please type the code sent to your device"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#655F5F"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#7630C6"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                >
+
+                <EditText
+                    android:id="@+id/verifyOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:hint="Verification Code"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:backgroundTint="#7630C6"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/otpResend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:textColor="@color/white"
+                    android:text="Resend"/>
+
+                <Button
+                    android:id="@+id/otpVerify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Verify"/>
+
+
+            </LinearLayout>
+
+
+
+<!--            <include-->
+<!--                android:id="@+id/progress_layout"-->
+<!--                layout="@layout/layout_progress"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:visibility="gone" />-->
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

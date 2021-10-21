@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357523473077",
+    "project_id": "vyapar-46954",
+    "storage_bucket": "vyapar-46954.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357523473077:android:0c96c79fc8fb461ccf74fc",
+        "android_client_info": {
+          "package_name": "com.base.structure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357523473077-d2b7ae0c6p80cigc403ajsf0vvdvrjj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfpWbBEKfpPYLXOIldY_FFfo6qt0lscE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357523473077-d2b7ae0c6p80cigc403ajsf0vvdvrjj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

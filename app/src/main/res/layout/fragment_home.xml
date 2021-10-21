@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPager"
+            app:cardElevation="@dimen/_3sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp">
+
+            <com.huanhailiuxin.coolviewpager.CoolViewPager
+                android:id="@+id/viewPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:cvp_autoscroll="true"
+                app:cvp_autoscrolldirection="forward"
+                app:cvp_drawedgeeffect="true"
+                app:cvp_edgeeffectcolor="@color/colorPrimary"
+                app:cvp_infiniteloop="true"
+                app:cvp_intervalinmillis="2000"
+                app:cvp_scrollduration="800"
+                app:cvp_scrollmode="horizontal" />
+        </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/items" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.base.structure.ui.activities.SignUpActivity">
+
+    <data class="SignUpBinding" >
+        <import type="android.view.View"/>
+        <variable
+            name="isRegister"
+            type="Boolean" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/register_background"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_20sdp"
+
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_70sdp"
+                    >
+
+                    <EditText
+                        android:id="@+id/signUpMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableRight="@drawable/ic_baseline_phone_android_24"
+                        android:hint="Mobile"/>
+
+
+
+                    <EditText
+                        android:id="@+id/signUpPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableRight="@drawable/ic_baseline_lock_24"
+                        android:hint="Password"/>
+
+
+
+
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_minus45sdp"
+                    android:background="@drawable/gradiant_button_shape"
+                    android:elevation="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold"
+                    android:text="REGISTER"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account? "/>
+
+                    <TextView
+                        android:id="@+id/signInHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SignIn Here"
+                        android:textColor="#0813F3"/>
+
+                </LinearLayout>
+
+
+
+        <!-- Progress Bar used to show continuous Loader over Screen -->
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    </ScrollView>
+</layout>

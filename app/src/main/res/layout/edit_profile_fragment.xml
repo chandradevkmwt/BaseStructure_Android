@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="EditProfileBinding" >
+        <import type="android.view.View"/>
+
+    </data>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.EditProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textColor="#5C5A5A"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+
+            <EditText
+                android:id="@+id/editFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="name"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/text_shape"
+                android:padding="@dimen/_5sdp"/>
+
+
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:hint="Email"
+                    app:hintTextColor="#7630C6"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/text_shape"/>
+
+
+
+                <EditText
+                    android:id="@+id/editPlotNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/text_shape"
+                    android:hint="Plot no"/>
+
+
+                <EditText
+                    android:id="@+id/editStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/text_shape"
+                    android:hint="Street/Colony"
+                    />
+
+                <EditText
+                    android:id="@+id/editLandmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/text_shape"
+                    android:padding="@dimen/_5sdp"
+                    android:hint="Landmark"/>
+
+
+                <EditText
+                    android:id="@+id/editCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/text_shape"
+                    android:padding="@dimen/_5sdp"
+                    android:hint="City"/>
+
+
+                <EditText
+                    android:id="@+id/editState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/text_shape"
+                    android:padding="@dimen/_5sdp"
+                    android:textCursorDrawable="@color/mtrl_textinput_default_box_stroke_color"
+                    android:hint="State"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/editPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="Pin Code"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/text_shape"
+                    android:padding="@dimen/_5sdp"/>
+
+
+
+            <Button
+                android:id="@+id/editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
+</layout>

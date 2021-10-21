@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E8E8ED"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/headerParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_header_img"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/nav_header_changeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_baseline_create_white_24"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nav_header_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/nav_header_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</LinearLayout>

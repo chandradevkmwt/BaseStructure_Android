@@ -1,0 +1,36 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Base Structure</string>
+
+
+    <!--Login Screen-->
+
+    <string name="retry">Retry</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Loading">Loading</string>
+    <string name="no_internet">No Internet. Please check your connection.</string>
+    <string name="timeout_error">Request taking too much time to process. Please try after some time.</string>
+    <string name="undefined_error">Server is not responding. Please try after some time.</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="are_you_sure_to_logout">Are you sure to logout ?</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_store">Stores</string>
+    <string name="title_sell">Sell</string>
+    <string name="title_notifications">Notification</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_sms">Sms</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+<!-- TODO: Remove or change this placeholder text -->
+
+
+    /////////////////////////////////////////////////////////
+
+
+    ///////////////////////////////////////////////////////////
+    <!-- Strings used for fragments for navigation -->
+
+
+</resources>

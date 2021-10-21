@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.base.structure.ui.activities.SignInActivity">
+
+    <data class="LoginBinding" >
+        <import type="android.view.View"/>
+        <variable
+            name="isRegister"
+            type="Boolean" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/login_background"
+        >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PvcMart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_20sdp"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_70sdp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/signInMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:background="@drawable/edit_text_background"
+                            android:drawableRight="@drawable/ic_baseline_phone_android_24"
+                            android:hint="Mobile"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:singleLine="true" />
+
+
+                        <EditText
+                            android:id="@+id/signInPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/signInMobile"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:inputType="textPassword"
+                            android:background="@drawable/edit_text_background"
+                            android:drawableRight="@drawable/ic_baseline_lock_24"
+                            android:hint="Password"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:singleLine="true" />
+
+
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/signIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signInPassword"
+                    android:layout_marginTop="@dimen/_minus45sdp"
+                    android:background="@drawable/gradiant_button_shape"
+                    android:elevation="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="SUBMIT"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="if you forgot your password? "/>
+
+                    <TextView
+                        android:id="@+id/resetPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reset Password"
+                        android:textColor="#0813F3"/>
+
+                </LinearLayout>
+
+
+
+        <!-- Progress Bar used to show continuous Loader over Screen -->
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    </ScrollView>
+</layout>

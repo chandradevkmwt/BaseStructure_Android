@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.base.structure.ui.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"
+        >
+<!--        <action android:id="@+id/redirect_postdetail"-->
+<!--            app:destination="@id/navigation_post_detail">-->
+<!--            <argument app:argType="com.my.structure.model.response.AllPostResponseItem" android:name="item"/>-->
+<!--        </action>-->
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_change_password"
+        android:name="com.base.structure.ui.fragments.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/change_password_fragment" >
+
+<!--        <action
+            android:id="@+id/t1"
+            app:destination="@id/navigation_sell">
+            <argument android:name="price" app:argType="com.base.structure.model.response.PostModel"/>
+        </action>-->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_edit_profile"
+        android:name="com.base.structure.ui.fragments.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/edit_profile_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_aboutUs"
+        android:name="com.base.structure.ui.fragments.AboutUsFragment"
+        android:label="About Us"
+        tools:layout="@layout/about_us_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_privacyPolicy"
+        android:name="com.base.structure.ui.fragments.PrivacyPolicyFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/privacy_policy_fragment" >
+    </fragment>
+
+
+
+
+</navigation>
